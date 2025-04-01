@@ -79,6 +79,8 @@ Link do repositório
 - Executar o projeto frontend.
 
 ## Telas da aplicação
+![image](https://github.com/user-attachments/assets/504f6830-5c12-4942-8905-677bccb92a76)
+
 ![image](https://google.com.br)
 ![image](https://google.com.br)
 ![image](https://google.com.br)
