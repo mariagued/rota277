@@ -16,7 +16,7 @@ Link para o PDF
 Link do repositório
 
 ## Framework CSS
-**Bootstrap**
+**Materialize**
 
 ## Dependências JavaScript
 - **JQuery** - Para realizar animações.
