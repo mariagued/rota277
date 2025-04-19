@@ -87,5 +87,3 @@ Link do repositório
 ![image](https://github.com/user-attachments/assets/cdf845e4-0903-47cf-8725-540681c4d196)
 ![image](https://github.com/user-attachments/assets/29146bc3-2df8-48f3-82ed-5d3b2afce3f9)
 ![image](https://github.com/user-attachments/assets/ac145440-4cf1-4f5c-a525-c8154952c16c)
-![image](https://github.com/user-attachments/assets/ad4db2b6-a11c-4f97-acd0-bdbe03c150ad)
-
