@@ -1,0 +1,16 @@
+{
+  "name": "rota227",
+  "version": "1.0.0",
+  "description": "O projeto Rota277 tem como objetivo desenvolver, de forma progressiva e didática, um Sistema de Vendas Digitais especializado na comercialização de itens de cervejaria. A plataforma oferecerá uma experiência intuitiva para os clientes, permitindo a navegação por um catálogo de produtos, realização de cadastros, login para acesso a ofertas exclusivas e uma página de contato para suporte e atendimento ao cliente.<br>\r O design e a estrutura visual do site foram inspirados no template do Rota34, garantindo uma interface moderna e atrativa. A aplicação será desenvolvida com foco em usabilidade, escalabilidade e segurança, proporcionando uma plataforma eficiente tanto para clientes quanto para administradores.\r O repositório do projeto será disponibilizado para acompanhamento do código e evolução da aplicação.<br>",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "materialize-css": "^1.0.0"
+  }
+}
