@@ -1,6 +1,51 @@
-:root{
-    border: 0;
-    padding: 0;
-    font-size: auto;
+/* estilização tirada do materialize - https://materializeweb.com/footer.html */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
+main {
+    flex: 1 0 auto;
+}
+
+/* .imagem-galeria{
+    width: 16rem;
+  height: 9rem;
+  object-fit: cover;
+} */
+
+
+
+/* rodapé */
+footer{
+    margin-top: 3rem;
+
+}
+#link-rodape{
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#botao-formulario{
+    margin-bottom: 2rem;
+}
+
+#icones-redes {
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 0;
+    margin-top: 3rem;
+  display: flex; /* Ativa o flexbox */
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+  gap: 20px; /* Espaçamento entre os ícones */
+}
+
+#icones-redes li {
+  display: flex;
+}
+
+/* pagina produtos */
+.products{
+  margin-top: 3rem;
+}

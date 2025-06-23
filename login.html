@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Import Font Awesome Icon Font -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules\materialize-css\dist\css\materialize.css" />
+    <link rel="stylesheet" href="node_modules\alertifyjs\build\css\alertify.css" />
+    <link rel="stylesheet" href="assets/resources/styles/style.css">
+</head>
+
+<body class="scrollspy" id="home">
+
+    <!-- inicio - navbar -->
+    <div class="navbar-fixed">
+        <nav class="brown">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo">
+                        <img src="favicon.png" alt="Logo" width="65">
+                    </a>
+                    <!-- hamburger icon for the mobile menu -->
+                    <a href="#" data-target="slide-out" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                        <li>
+                            <a href="products.html">Produtos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- fim -navbar -->
+
+    <!-- painel de navegação lateral -->
+    <ul class="sidenav" id="slide-out">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="login.html">Login</a>
+        </li>
+        <li>
+            <a href="products.html">Produtos</a>
+        </li>
+    </ul>
+    <!-- fim - painel de navegação lateral -->
+
+    <main>
+        <div class="container">
+            <form id="form">
+                <h4 class="center-align"><b>Formulário de Login</b></h4>
+                <!-- Nome Completo -->
+                <div class="input-field col s12 l3">
+                    <input id="nome" type="text" class="validate" required autofocus>
+                    <label for="nome">Nome Completo</label>
+                </div>
+                <!-- Email -->
+                <div class="input-field col s12 l3">
+                    <input id="email" type="email" class="validate" required>
+                    <label for="email">Email</label>
+                </div>
+                <!-- CPF -->
+                <div class="input-field col s12 l3">
+                    <input id="cpf" type="text" class="validate" required maxlength="14" placeholder="000.000.000-00"
+                        pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$" />
+                    <label for="input-cpf">CPF</label>
+                </div>
+                <!-- Data de Nascimento -->
+                <div class="input-field col s12 l3">
+                    <input id="nascimento" type="date" class="validate" required>
+                    <label for="nascimento">Data de Nascimento</label>
+                </div>
+                <!-- Sexo -->
+                <div class="input-field col s12 l3">
+                    <!-- <span class="helper-text" data-error="Marque essa opção" data-success="Sexo válido">Sexo:</span> -->
+                    <label for="cpf">Sexo (Marque a opção correspondente)</label><br>
+                    <p>
+                        <label>
+                            <input class="with-gap" name="group1" type="radio" />
+                            <span>Masculino</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input class="with-gap" name="group1" type="radio" />
+                            <span>Feminino</span>
+                        </label>
+                    </p>
+                </div>
+
+                <div class="input-field col s12 l3">
+                    <div class="center-align" id="botao-formulario">
+                        <!-- Botão Salvar -->
+                        <button class="btn waves-effect waves-light orange" type="submit">
+                            Salvar
+                            <i class="material-icons right">send</i>
+                        </button>
+                        <!-- botão de limpar -->
+                        <button class="btn waves-effect waves-light orange" type="button">
+                            Limpar
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+    <!-- inicio radapé -->
+    <div id="footer"></div>
+    <!-- fim rodapé -->
+
+    <!-- validacao regex e modal -->
+    <!-- <div id="validacao"></div> -->
+    <!-- fim validacao regex e modal -->
+
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="node_modules\materialize-css\dist\js\materialize.min.js"></script>
+    <script src="node_modules\alertifyjs\build\alertify.js"></script>
+    <script src="assets\resources\scripts\index.js"></script>
+
+
+    <!-- incio validacao cpf regex -->
+    <script>
+        $(document).ready(function () {
+
+            // Verifica se está na página de login (altere para o nome exato do seu arquivo)
+            if (window.location.pathname.includes('login.html')) {
+
+                // Máscara CPF
+                $('#cpf').on('input', function () {
+                    let cpf = $(this).val().replace(/\D/g, '');
+
+                    if (cpf.length > 11) {
+                        cpf = cpf.substring(0, 11);
+                    }
+
+                    cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+                    cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+                    cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+
+                    $(this).val(cpf);
+                });
+
+                // Validação e Modal
+                $('#form').on('submit', function (e) {
+                    e.preventDefault();
+
+                    const cpf = $('#cpf').val();
+                    const regexCPF = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/;
+
+                    if (!regexCPF.test(cpf)) {
+                        alertify.error('CPF inválido. Use o formato 000.000.000-00.');
+                        $('#cpf').focus();
+                        return false;
+                    }
+
+                    alertify.alert(
+                        'Cadastro Realizado',
+                        'Seus dados foram salvos com sucesso!',
+                        function () {
+                            alertify.success('Dados confirmados');
+                            $('#form')[0].reset();
+                        }
+                    );
+                });
+
+            } // fim da verificação de página
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $('#footer').load('footer.html');
+            $('#validacao').load('app\pages\validacao.html');
+        });
+    </script>
+</body>
+
+</html>

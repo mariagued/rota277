@@ -1,31 +1,275 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-  <title>Rota 277</title>
+  <title>Rota277</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="assets\resources\images\lobo-branco-sem-fundo.png">
-  <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css">
-  <link rel="stylesheet" href="assets\resources\styles\style.css">
-  <link rel="stylesheet" href="assets\resources\scripts\index.js">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!--Import Google Icon Font-->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Import Font Awesome Icon Font -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="node_modules\materialize-css\dist\css\materialize.css" />
+  <link rel="stylesheet" href="node_modules\alertifyjs\build\css\alertify.css" />
+  <link rel="stylesheet" href="assets/resources/styles/style.css">
 
 </head>
 
-<body>
-  <!--INICIO MENU-->
-  <div id="menu"></div>
-  <!--FIM MENU-->
+<body class="scrollspy" id="home">
+  <!-- inicio - navbar -->
+  <div class="navbar-fixed">
+    <nav class="brown">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">
+            <img src="favicon.png" alt="Logo" width="65">
+          </a>
+          <!-- hamburger icon for the mobile menu -->
+          <a href="#" data-target="slide-out" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="login.html">Login</a>
+            </li>
+            <li>
+              <a href="products.html">Produtos</a>
+            </li>
+            <li>
+              <a href="#gallery">Galeria</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- fim -navbar -->
 
-  
+  <!-- painel de navegação lateral -->
+  <ul class="sidenav" id="slide-out">
+    <li>
+      <a href="login.html">Login</a>
+    </li>
+    <li>
+      <a href="products.html">Produtos</a>
+    </li>
+    <li>
+      <a href="#gallery">Galeria</a>
+    </li>
+  </ul>
+  <!-- painel de navegação lateral -->
 
-  <!--INICIO RODAPÉ-->
+  <!-- inicio - casousel -->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="assets/resources/images/carousel/paisagem2.jpg" alt="">
+        <div class="caption center-align">
+          <h2>Estamos com muita novidade!</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+            Vem conhecer mais sobre a gente
+          </h5>
+          <a href="#footer" class="btn btn-large orange">Redes Sociais</a>
+        </div>
+      </li>
+      <li>
+        <img src="assets/resources/images/carousel/paisagem4.jpg" alt="">
+        <div class="caption center-align">
+          <h2>Uma obra de arte líquida</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+            Faça login, e venha conhecer mais sobre essa história
+          </h5>
+          <a href="login.html" class="btn btn-large orange">Criar login</a>
+        </div>
+      </li>
+      <li>
+        <img src="assets/resources/images/carousel/paisagem5.jpg" alt="">
+        <div class="caption center-align">
+          <h2>Nossas Fotos</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+            Confira as nossa galeria de fotos, clique no botão abaixo
+          </h5>
+          <a href="#gallery" class="btn btn-large orange">Leia Mais</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- fim - casousel -->
+  <main>
+
+    <!-- inicio section - galeria -->
+    <section id="gallery" class="section scrollspy">
+      <div class="container">
+        <h5 class="center">
+          <span class="black-text">Galeria de Fotos da Nossa Marca</span>
+        </h5>
+        <div class="row g-3">
+          <div class="imagem-galeria">
+            <div class="col s12 l3">
+              <img class="materialboxed responsive-img" src="assets/resources/images/carousel/paisagem2.jpg"
+                alt="Foto 1 da marca">
+            </div>
+            <div class="col s12 l3">
+              <img class="materialboxed responsive-img" src="assets/resources/images/carousel/paisagem3.jpeg"
+                alt="Foto 2 da marca">
+            </div>
+            <div class="col s12 l3">
+              <img class="materialboxed responsive-img" src="assets/resources/images/carousel/paisagem4.jpg"
+                alt="Foto 3 da marca">
+            </div>
+            <div class="col s12 l3">
+              <img class="materialboxed responsive-img" src="assets/resources/images/carousel/ambev.jpg"
+                alt="Foto 4 da marca">
+            </div>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="imagem-galeria">
+            <div class="col s12 l3">
+              <img class="materialboxed responsive-img" src="assets/resources/images/carousel/paisagem2.jpg"
+                alt="Foto 1 da marca">
+            </div>
+            <div class="col s12 l3">
+              <img class="materialboxed responsive-img" src="assets/resources/images/carousel/paisagem3.jpeg"
+                alt="Foto 2 da marca">
+            </div>
+            <div class="col s12 l3">
+              <img class="materialboxed responsive-img" src="assets/resources/images/carousel/paisagem4.jpg"
+                alt="Foto 3 da marca">
+            </div>
+            <div class="col s12 l3">
+              <img class="materialboxed responsive-img" src="assets/resources/images/carousel/ambev.jpg"
+                alt="Foto 4 da marca">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- fim section - galeria -->
+
+    <!-- incio cards -->
+    <div class="row g-3">
+      <div class="container">
+        <h5 class="center">
+          <span class="black-text">Produtos Mais Vendidos</span>
+        </h5>
+        <div class="row">
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473763/heineken.png">
+              </div>
+              <div class="card-content">
+                <p>Heineken é uma cerveja holandesa, leve e refrescante, famosa pela garrafa verde e sabor único, graças
+                  à levedura exclusiva A-Yeast.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473762/skol.png">
+              </div>
+              <div class="card-content">
+                <p>Skol é uma cerveja brasileira, leve e bem refrescante, feita para combinar com o clima e a alegria do
+                  Brasil por onde passa.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473761/brahma.png">
+              </div>
+              <div class="card-content">
+                <p>Brahma é uma cerveja brasileira, de sabor leve e suave, tradicional em todos os cantos dos encontros
+                  e festas do país.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473758/budweis.png">
+              </div>
+              <div class="card-content">
+                <p>Budweiser é uma cerveja americana, de sabor marcante e levemente adocicado, conhecida por seu
+                  equilíbrio e tradição mundial.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fim cards -->
+
+    <!-- inicio listagem -->
+    <div class="container">
+      <ul class="collapsible expandable">
+        <li>
+          <div class="collapsible-header col s12 m3"><i class="material-icons">place</i>Nossa Localização</div>
+          <div class="collapsible-body">
+            <p>Nos mande mensagens nas redes socias que marcaremos um horário especial para voce!</p>
+
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header col s12 m3"><i class="material-icons">phone</i>Telefone</div>
+          <div class="collapsible-body">
+            <p>Telefone para contato: (42) 99900-2525</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header col s12 m3"><i class="material-icons">shop</i>Mais Vendidos</div>
+          <div class="collapsible-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsam, dolores ipsa culpa rerum aperiam
+            facere enim at perferendis, odio possimus in. Porro quos atque iure similique, amet eveniet modi!
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- fim listagem-->
+
+    <!-- inicio - video demonstrativo -->
+    <div class="container">
+      <h4 class="center">
+        <span class="black-text">Vídeo da Nossa Cervejaria</span>
+      </h4>
+      <div class="video-container">
+        <iframe width="853" height="315" src="https://www.youtube.com/embed/aDzWppN9G6U?si=_OSEzCI8JpGteT20"
+          title="Cervejas artesanais estão cada vez mais populares entre os brasileiros" frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    <!-- fim - video demonstrativo -->
+  </main>
+  <!-- inicio radapé -->
   <div id="footer"></div>
-  <!--FIM RODAPÉ-->
+  <!-- fim rodapé -->
 
-  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
-  <script src="assets/resources/scripts/index.js"></script>
+  <script src="node_modules\jquery\dist\jquery.min.js"></script>
+  <script src="node_modules\materialize-css\dist\js\materialize.min.js"></script>
+  <script src="node_modules\alertifyjs\build\alertify.js"></script>
+  <script src="assets\resources\scripts\index.js"></script>
+
+  <script>
+    $(function () {
+      $('#footer').load('footer.html');
+
+    });
+  </script>
 </body>
 
 </html>

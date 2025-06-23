@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rota 277</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!--Import Google Icon Font-->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Import Font Awesome Icon Font -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="node_modules\materialize-css\dist\css\materialize.css" />
+  <link rel="stylesheet" href="node_modules\alertifyjs\build\css\alertify.css" />
+  <link rel="stylesheet" href="assets/resources/styles/style.css">
+
+
+</head>
+
+<body class="scrollspy" id="home">
+
+  <!-- inicio - navbar -->
+  <div class="navbar-fixed">
+    <nav class="brown">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">
+            <img src="favicon.png" alt="Logo" width="65">
+          </a>
+          <!-- hamburger icon for the mobile menu -->
+          <a href="#" data-target="slide-out" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="login.html">Login</a>
+            </li>
+            <li>
+              <a href="products.html">Produtos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- fim -navbar -->
+
+  <!-- painel de navegação lateral -->
+  <ul class="sidenav" id="slide-out">
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+      <a href="login.html">Login</a>
+    </li>
+    <li>
+      <a href="products.html">Produtos</a>
+    </li>
+  </ul>
+  <!-- painel de navegação lateral -->
+
+  <!-- inicio - casousel -->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="assets/resources/images/carousel/paisagem2.jpg" alt="">
+        <div class="caption center-align">
+          <h2>Estamos com muita novidade!</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+            Vem conhecer mais sobre a gente
+          </h5>
+          <a href="#footer" class="btn btn-large orange">Redes Sociais</a>
+        </div>
+      </li>
+      <li>
+        <img src="assets/resources/images/carousel/paisagem4.jpg" alt="">
+        <div class="caption center-align">
+          <h2>Uma obra de arte líquida</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+            Faça login, e venha conhecer mais sobre essa história
+          </h5>
+          <a href="login.html" class="btn btn-large orange">Criar login</a>
+        </div>
+      </li>
+      <li>
+        <img src="assets/resources/images/carousel/paisagem5.jpg" alt="">
+        <div class="caption center-align">
+          <h2>Nossas Fotos</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+            Confira as nossa galeria de fotos, clique no botão abaixo
+          </h5>
+          <a href="#gallery" class="btn btn-large orange">Leia Mais</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- fim - casousel -->
+
+  <main>
+    <div class="products">
+      <div class="container">
+        <div class="row">
+          <!-- 1 -->
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473763/heineken.png">
+                <div class="activator waves-effect waves-light"
+                  style="position:absolute;top:0;bottom:0;right:0;left:0;">
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Heineken<i class="material-icons right">more_vert</i></span>
+                <p><a href="login.html">Solicite seu orçamento</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"><i class="material-icons right">close</i></i>Heineken</span>
+                <p>Heineken é uma cerveja holandesa, leve e refrescante, famosa pela garrafa verde e sabor único, graças
+                  à
+                  levedura exclusiva A-Yeast.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473762/skol.png">
+                <div class="activator waves-effect waves-light"
+                  style="position:absolute;top:0;bottom:0;right:0;left:0;">
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Skol<i class="material-icons right">more_vert</i></span>
+                <p><a href="login.html">Solicite seu orçamento</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"><i class="material-icons right">close</i></i>Skol</span>
+                <p>Skol é uma cerveja brasileira, leve e bem refrescante, feita para combinar com o clima e a alegria do
+                  Brasil.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473761/brahma.png">
+                <div class="activator waves-effect waves-light"
+                  style="position:absolute;top:0;bottom:0;right:0;left:0;">
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Brahma<i class="material-icons right">more_vert</i></span>
+                <p><a href="login.html">Solicite seu orçamento</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"><i class="material-icons right">close</i></i>Brahma</span>
+                <p>Brahma é uma cerveja brasileira, de sabor leve e suave, tradicional nos encontros e festas do país.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750475825/brahma-long.png">
+                <div class="activator waves-effect waves-light"
+                  style="position:absolute;top:0;bottom:0;right:0;left:0;">
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Brahma Long Neck<i class="material-icons right">more_vert</i></span>
+                <p><a href="login.html">Solicite seu orçamento</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"><i class="material-icons right">close</i></i>Brahma Long Neck</span>
+                <p>A Brahma Long Neck é a versão em garrafa de 355 ml da cerveja Brahma, prática e ideal para consumir
+                  gelada, mantendo o sabor leve e refrescante por mais tempo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <!-- 5 -->
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473758/budweis.png">
+                <div class="activator waves-effect waves-light"
+                  style="position:absolute;top:0;bottom:0;right:0;left:0;">
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Budweiser<i class="material-icons right">more_vert</i></span>
+                <p><a href="login.html">Solicite seu orçamento</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"><i class="material-icons right">close</i></i>Budweiser</span>
+                <p>Budweiser é uma cerveja americana, de sabor marcante e levemente adocicado, conhecida por seu
+                  equilíbrio e tradição mundial.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473757/corona.png">
+                <div class="activator waves-effect waves-light"
+                  style="position:absolute;top:0;bottom:0;right:0;left:0;">
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Corona<i class="material-icons right">more_vert</i></span>
+                <p><a href="login.html">Solicite seu orçamento</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"><i class="material-icons right">close</i></i>Corona</span>
+                <p>Corona é uma cerveja mexicana, leve e refrescante, famosa por ser servida com uma fatia de limão na
+                  boca da garrafa.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473756/stella.png">
+                <div class="activator waves-effect waves-light"
+                  style="position:absolute;top:0;bottom:0;right:0;left:0;">
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Stella Artois<i class="material-icons right">more_vert</i></span>
+                <p><a href="login.html">Solicite seu orçamento</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"><i class="material-icons right">close</i></i>Stella Artois</span>
+                <p>Stella Artois é uma cerveja belga, de sabor suave e levemente maltado, conhecida pela sua tradição e
+                  qualidade premium.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473756/petra.png">
+                <div class="activator waves-effect waves-light"
+                  style="position:absolute;top:0;bottom:0;right:0;left:0;">
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Petra<i class="material-icons right">more_vert</i></span>
+                <p><a href="login.html">Solicite seu orçamento</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"><i class="material-icons right">close</i></i>Petra</span>
+                <p>Petra é uma cerveja brasileira, feita com puro malte, de sabor encorpado, suave e com aroma mais
+                  marcante.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!-- 1 -->
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473763/heineken.png">
+                <div class="activator waves-effect waves-light"
+                  style="position:absolute;top:0;bottom:0;right:0;left:0;">
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Heineken<i class="material-icons right">more_vert</i></span>
+                <p><a href="login.html">Solicite seu orçamento</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"><i class="material-icons right">close</i></i>Heineken</span>
+                <p>Heineken é uma cerveja holandesa, leve e refrescante, famosa pela garrafa verde e sabor único, graças
+                  à
+                  levedura exclusiva A-Yeast.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473762/skol.png">
+                <div class="activator waves-effect waves-light"
+                  style="position:absolute;top:0;bottom:0;right:0;left:0;">
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Skol<i class="material-icons right">more_vert</i></span>
+                <p><a href="login.html">Solicite seu orçamento</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"><i class="material-icons right">close</i></i>Skol</span>
+                <p>Skol é uma cerveja brasileira, leve e bem refrescante, feita para combinar com o clima e a alegria do
+                  Brasil.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473761/brahma.png">
+                <div class="activator waves-effect waves-light"
+                  style="position:absolute;top:0;bottom:0;right:0;left:0;">
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Brahma<i class="material-icons right">more_vert</i></span>
+                <p><a href="login.html">Solicite seu orçamento</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"><i class="material-icons right">close</i></i>Brahma</span>
+                <p>Brahma é uma cerveja brasileira, de sabor leve e suave, tradicional nos encontros e festas do país.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750475825/brahma-long.png">
+                <div class="activator waves-effect waves-light"
+                  style="position:absolute;top:0;bottom:0;right:0;left:0;">
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Brahma Long Neck<i class="material-icons right">more_vert</i></span>
+                <p><a href="login.html">Solicite seu orçamento</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"><i class="material-icons right">close</i></i>Brahma Long Neck</span>
+                <p>A Brahma Long Neck é a versão em garrafa de 355 ml da cerveja Brahma, prática e ideal para consumir
+                  gelada, mantendo o sabor leve e refrescante por mais tempo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <!-- 5 -->
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473758/budweis.png">
+                <div class="activator waves-effect waves-light"
+                  style="position:absolute;top:0;bottom:0;right:0;left:0;">
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Budweiser<i class="material-icons right">more_vert</i></span>
+                <p><a href="login.html">Solicite seu orçamento</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"><i class="material-icons right">close</i></i>Budweiser</span>
+                <p>Budweiser é uma cerveja americana, de sabor marcante e levemente adocicado, conhecida por seu
+                  equilíbrio e tradição mundial.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473757/corona.png">
+                <div class="activator waves-effect waves-light"
+                  style="position:absolute;top:0;bottom:0;right:0;left:0;">
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Corona<i class="material-icons right">more_vert</i></span>
+                <p><a href="login.html">Solicite seu orçamento</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"><i class="material-icons right">close</i></i>Corona</span>
+                <p>Corona é uma cerveja mexicana, leve e refrescante, famosa por ser servida com uma fatia de limão na
+                  boca da garrafa.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473756/stella.png">
+                <div class="activator waves-effect waves-light"
+                  style="position:absolute;top:0;bottom:0;right:0;left:0;">
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Stella Artois<i class="material-icons right">more_vert</i></span>
+                <p><a href="login.html">Solicite seu orçamento</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"><i class="material-icons right">close</i></i>Stella Artois</span>
+                <p>Stella Artois é uma cerveja belga, de sabor suave e levemente maltado, conhecida pela sua tradição e
+                  qualidade premium.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="col s12 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://res.cloudinary.com/dgw3fp9gt/image/upload/v1750473756/petra.png">
+                <div class="activator waves-effect waves-light"
+                  style="position:absolute;top:0;bottom:0;right:0;left:0;">
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">Petra<i class="material-icons right">more_vert</i></span>
+                <p><a href="login.html">Solicite seu orçamento</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title"><i class="material-icons right">close</i></i>Petra</span>
+                <p>Petra é uma cerveja brasileira, feita com puro malte, de sabor encorpado, suave e com aroma mais
+                  marcante.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+  <!-- inicio radapé -->
+  <div id="footer"></div>
+  <!-- fim rodapé -->
+
+  <script src="node_modules\jquery\dist\jquery.min.js"></script>
+  <script src="node_modules\materialize-css\dist\js\materialize.min.js"></script>
+  <script src="node_modules\alertifyjs\build\alertify.js"></script>
+  <script src="assets\resources\scripts\index.js"></script>
+
+  <script>
+    $(function () {
+      $('#footer').load('footer.html');
+
+    });
+  </script>
+</body>
+
+</html>
