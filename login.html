@@ -64,7 +64,46 @@
     </ul>
     <!-- fim - painel de navegação lateral -->
 
+
     <main>
+
+        <!-- inicio - casousel -->
+        <section class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="assets/resources/images/carousel/paisagem2.jpg" alt="">
+                    <div class="caption center-align">
+                        <h2>Estamos com muita novidade!</h2>
+                        <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+                            Vem conhecer mais sobre a gente
+                        </h5>
+                        <a href="#footer" class="btn btn-large orange">Redes Sociais</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/resources/images/carousel/paisagem4.jpg" alt="">
+                    <div class="caption center-align">
+                        <h2>Uma obra de arte líquida</h2>
+                        <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+                            Faça login, e venha conhecer mais sobre essa história
+                        </h5>
+                        <a href="login.html" class="btn btn-large orange">Criar login</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/resources/images/carousel/paisagem5.jpg" alt="">
+                    <div class="caption center-align">
+                        <h2>Nossas Fotos</h2>
+                        <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+                            Confira as nossa galeria de fotos, clique no botão abaixo
+                        </h5>
+                        <a href="#gallery" class="btn btn-large orange">Leia Mais</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- fim - casousel -->
+
         <div class="container">
             <form id="form">
                 <h4 class="center-align"><b>Formulário de Login</b></h4>
@@ -130,9 +169,6 @@
     <div id="footer"></div>
     <!-- fim rodapé -->
 
-    <!-- validacao regex e modal -->
-    <!-- <div id="validacao"></div> -->
-    <!-- fim validacao regex e modal -->
 
     <script src="node_modules\jquery\dist\jquery.min.js"></script>
     <script src="node_modules\materialize-css\dist\js\materialize.min.js"></script>
@@ -192,7 +228,6 @@
     <script>
         $(function () {
             $('#footer').load('footer.html');
-            $('#validacao').load('app\pages\validacao.html');
         });
     </script>
 </body>
