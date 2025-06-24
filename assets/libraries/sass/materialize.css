@@ -5405,7 +5405,7 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 
 .collapsible.popout {
-  border: none;
+  border: nome;
   box-shadow: none;
 }
 .collapsible.popout > li {
@@ -7401,7 +7401,7 @@ input[type=range]::-ms-thumb {
   z-index: 1;
 }
 .carousel.carousel-slider .carousel-fixed-item.with-indicators {
-  bottom: 68px;
+  bottom: 69px;
 }
 .carousel.carousel-slider .carousel-item {
   width: 100%;
