@@ -87,7 +87,7 @@
                 <!-- Sexo -->
                 <div class="input-field col s12">
                     <select id="select-insurance">
-                        <option value="" disabled selected></option>
+                        <option value="" disabled selected>Selecione</option>
                         <option value="Feminino">Feminino</option>
                         <option value="Masculino">Masculino</option>
                     </select>
@@ -103,7 +103,7 @@
                             <i class="material-icons right">send</i>
                         </button>
                         <!-- botão de limpar -->
-                        <button class="btn waves-effect waves-light orange" type="reset ">
+                        <button class="btn waves-effect waves-light orange" type="reset">
                             Limpar
                             <i class="material-icons right">send</i>
                         </button>
@@ -111,19 +111,20 @@
                 </div>
             </form>
         </div>
+
+        <!-- inicio relatorio -->
+        <div id="relatorio"></div>
+        <!-- fim relatorio -->
     </main>
 
-
     <!-- inicio radapé -->
-    <div id="footer"></div>
+    <footer id="footer"></footer>
     <!-- fim rodapé -->
-
 
     <script src="node_modules\jquery\dist\jquery.min.js"></script>
     <script src="node_modules\materialize-css\dist\js\materialize.min.js"></script>
     <script src="node_modules\alertifyjs\build\alertify.js"></script>
     <script src="assets\resources\scripts\index.js"></script>
-
 
     <!-- incio validacao cpf regex -->
     <script>
@@ -170,8 +171,9 @@
     </script>
 
     <script>
-        $(function () {
+        $(function () {          
             $('#footer').load('footer.html');
+            $('#relatorio').load('/app/pages/relatorio.html')
         });
     </script>
 </body>
