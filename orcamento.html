@@ -63,28 +63,41 @@
         <div class="container">
             <form id="form">
                 <h4 class="center-align" id="titulo-orcamento">Solicitação de Orçamento</h4>
+                <p class="center">Nos envie seus dados e, assim que possível, entraremos em contato para conversarmos melhor sobre o orçamento.</p>
                 <!-- Nome Completo -->
-                <div class="input-field col s12 l3">
-                    <input id="nome" type="text" class="validate" required autofocus>
-                    <label for="nome">Nome Completo</label>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="input-name" type="text" autofocus />
+                        <label for="input-name">Nome Completo</label>
+                    </div>
                 </div>
                 <!-- Email -->
-                <div class="input-field col s12 l3">
-                    <input id="email" type="email" class="validate" required>
-                    <label for="email">Email</label>
-                </div>
-                <!-- CPF -->
-                <div class="input-field col s12 l3">
-                    <input id="cpf" type="text" class="validate" required maxlength="14" placeholder="000.000.000-00"
-                        pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$" />
-                    <label for="input-cpf">CPF</label>
-                </div>
-                <!-- Data de Nascimento -->
-                <div class="input-field col s12 l3">
-                    <input id="nascimento" type="date" class="validate" required>
-                    <label for="nascimento">Data de Nascimento</label>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="input-email" type="email" class="validate" />
+                        <label for="input-email">Email</label>
+                    </div>
                 </div>
 
+                <!-- CPF -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="000.000.000-00" id="input-cpf" type="text" class="validate" required
+                            maxlength="14" />
+                        <label for="input-cpf">CPF</label>
+                    </div>
+                </div>
+
+                <!-- Data de Nascimento -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input min="1900-01-01" id="input-date" type="date"
+                            value="2000-01-01" required />
+                        <label for="input-date">Data de Nascimento</label>
+                        <span>Vendas proibidas para menores de 18 anos</span>
+                    </div>
+                </div>
 
                 <!-- Inicio dos botões -->
                 <div class="input-field col s12 l3">
