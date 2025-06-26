@@ -49,3 +49,11 @@ footer{
 .products{
   margin-top: 3rem;
 }
+
+
+/* orçamento */
+#titulo-orcamento{
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 4rem;
+}

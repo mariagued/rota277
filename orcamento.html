@@ -23,7 +23,7 @@
 
     <!-- inicio - navbar -->
     <div class="navbar-fixed">
-        <nav class="brown">
+        <nav class="cyan darken-4">
             <div class="container">
                 <div class="nav-wrapper">
                     <a href="index.html" class="brand-logo">
@@ -62,7 +62,7 @@
     <main>
         <div class="container">
             <form id="form">
-                <h4 class="center-align"><b>Formulário de Login</b></h4>
+                <h4 class="center-align" id="titulo-orcamento">Solicitação de Orçamento</h4>
                 <!-- Nome Completo -->
                 <div class="input-field col s12 l3">
                     <input id="nome" type="text" class="validate" required autofocus>
@@ -84,15 +84,7 @@
                     <input id="nascimento" type="date" class="validate" required>
                     <label for="nascimento">Data de Nascimento</label>
                 </div>
-                <!-- Sexo -->
-                <div class="input-field col s12">
-                    <select id="select-insurance">
-                        <option value="" disabled selected>Selecione</option>
-                        <option value="Feminino">Feminino</option>
-                        <option value="Masculino">Masculino</option>
-                    </select>
-                    <label>Com qual gênero você se identifica?</label>
-                </div>
+
 
                 <!-- Inicio dos botões -->
                 <div class="input-field col s12 l3">
@@ -171,7 +163,7 @@
     </script>
 
     <script>
-        $(function () {          
+        $(function () {
             $('#footer').load('footer.html');
             $('#relatorio').load('/app/pages/relatorio.html')
         });
