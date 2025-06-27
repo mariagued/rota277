@@ -1,44 +1,44 @@
 /* estilização tirada do materialize - https://materializeweb.com/footer.html */
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
-/* .imagem-galeria{
-    width: 16rem;
-  height: 9rem;
-  object-fit: cover;
-} */
+#botao-formulario {
+  margin-bottom: 2rem;
 
-
+}
 
 /* rodapé */
-footer{
-    margin-top: 3rem;
+footer {
+  margin-top: 3rem;
 
 }
-#link-rodape{
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
+
+#link-rodape {
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
-#botao-formulario{
-    margin-bottom: 2rem;
-}
+
 
 #icones-redes {
-  list-style: none; /* Remove os marcadores da lista */
+  list-style: none;
+  /* Remove os marcadores da lista */
   padding: 0;
-    margin-top: 3rem;
-  display: flex; /* Ativa o flexbox */
-  justify-content: center; /* Centraliza os ícones horizontalmente */
-  gap: 20px; /* Espaçamento entre os ícones */
+  margin-top: 3rem;
+  display: flex;
+  /* Ativa o flexbox */
+  justify-content: center;
+  /* Centraliza os ícones horizontalmente */
+  gap: 1.25rem;
+  /* Espaçamento entre os ícones */
 }
 
 #icones-redes li {
@@ -46,13 +46,13 @@ footer{
 }
 
 /* pagina produtos */
-.products{
+.products {
   margin-top: 3rem;
 }
 
 
 /* orçamento */
-#titulo-orcamento{
+#titulo-orcamento {
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 4rem;

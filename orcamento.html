@@ -63,7 +63,8 @@
         <div class="container">
             <form id="form">
                 <h4 class="center-align" id="titulo-orcamento">Solicitação de Orçamento</h4>
-                <p class="center">Nos envie seus dados e, assim que possível, entraremos em contato para conversarmos melhor sobre o orçamento.</p>
+                <p class="center">Nos envie seus dados e, assim que possível, entraremos em contato para conversarmos
+                    melhor sobre o orçamento.</p>
                 <!-- Nome Completo -->
 
                 <div class="row">
@@ -92,26 +93,25 @@
                 <!-- Data de Nascimento -->
                 <div class="row">
                     <div class="input-field col s12">
-                        <input min="1900-01-01" id="input-date" type="date"
-                            value="2000-01-01" required />
+                        <input min="1900-01-01" id="input-date" type="date" value="2000-01-01" required />
                         <label for="input-date">Data de Nascimento</label>
-                        <span>Vendas proibidas para menores de 18 anos</span>
+                        <span>*Vendas proibidas para menores de 18 anos</span>
                     </div>
                 </div>
 
                 <!-- Inicio dos botões -->
-                <div class="input-field col s12 l3">
-                    <div class="center-align" id="botao-formulario">
-                        <!-- Botão Salvar -->
-                        <button class="btn waves-effect waves-light orange" type="submit">
-                            Salvar
-                            <i class="material-icons right">send</i>
-                        </button>
-                        <!-- botão de limpar -->
-                        <button class="btn waves-effect waves-light orange" type="reset">
-                            Limpar
-                            <i class="material-icons right">send</i>
-                        </button>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="center-align" id="botao-formulario">
+                            <!-- Botão Salvar -->
+                                <button class="btn waves-effect waves-light orange" id="submit-button" type="submit">
+                                    Salvar
+                                </button>
+                                <!-- Botão Limpar -->
+                                <button class="btn waves-effect waves-light orange" id="reset-button" type="reset">
+                                    Limpar
+                                </button>
+                        </div>
                     </div>
                 </div>
             </form>
@@ -134,51 +134,91 @@
     <!-- incio validacao cpf regex -->
     <script>
         $(document).ready(function () {
-            // Verifica se está na página de login (altere para o nome exato do seu arquivo)
-            if (window.location.pathname.includes('login.html')) {
-                // Máscara CPF
-                $('#cpf').on('input', function () {
-                    let cpf = $(this).val().replace(/\D/g, '');
 
-                    if (cpf.length > 11) {
-                        cpf = cpf.substring(0, 11);
+            // Máscara CPF
+            $('#input-cpf').on('input', function () {
+                let cpf = $(this).val().replace(/\D/g, '');
+                if (cpf.length > 11) {
+                    cpf = cpf.substring(0, 11);
+                }
+                cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+                cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+                cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+                $(this).val(cpf);
+            });
+
+            // Validação do formulário
+            $('#form').on('submit', function (e) {
+                e.preventDefault();
+
+                // Nome
+                const nome = $('#input-name').val().trim();
+                if (nome === '') {
+                    alertify.error('Por favor, preencha seu nome completo.');
+                    $('#input-name').focus();
+                    return false;
+                }
+
+                // Email
+                const email = $('#input-email').val().trim();
+                if (email === '') {
+                    alertify.error('Por favor, informe seu e-mail.');
+                    $('#input-email').focus();
+                    return false;
+                }
+
+                // CPF
+                const cpf = $('#input-cpf').val();
+                const regexCPF = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/;
+                if (!regexCPF.test(cpf)) {
+                    alertify.error('CPF inválido. Use o formato 000.000.000-00.');
+                    $('#input-cpf').focus();
+                    return false;
+                }
+
+                // Data de Nascimento
+                const nascimento = $('#input-date').val();
+                if (nascimento === '') {
+                    alertify.error('Por favor, informe sua data de nascimento.');
+                    $('#input-date').focus();
+                    return false;
+                }
+
+                // Idade mínima de 18 anos
+                const hoje = new Date();
+                const nascimentoDate = new Date(nascimento);
+                const idade = hoje.getFullYear() - nascimentoDate.getFullYear();
+                const mes = hoje.getMonth() - nascimentoDate.getMonth();
+                if (mes < 0 || (mes === 0 && hoje.getDate() < nascimentoDate.getDate())) {
+                    idade--;
+                }
+                if (idade < 18) {
+                    alertify.error('É necessário ter pelo menos 18 anos.');
+                    $('#input-date').focus();
+                    return false;
+                }
+
+                // Modal de confirmação
+                alertify.alert(
+                    'Solicitação enviada',
+                    'Obrigado por enviar seus dados. Entraremos em contato em breve!',
+                    function () {
+                        alertify.success('Formulário enviado com sucesso.');
+                        $('#form')[0].reset();
                     }
+                );
 
-                    cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
-                    cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
-                    cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+            });
 
-                    $(this).val(cpf);
-                });
-
-                // Validação e Modal
-                $('#form').on('submit', function (e) {
-                    e.preventDefault();
-                    const cpf = $('#cpf').val();
-                    const regexCPF = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/;
-                    if (!regexCPF.test(cpf)) {
-                        alertify.error('CPF inválido. Use o formato 000.000.000-00.');
-                        $('#cpf').focus();
-                        return false;
-                    }
-                    alertify.alert(
-                        'Cadastro Realizado',
-                        'Seus dados foram salvos com sucesso!',
-                        function () {
-                            alertify.success('Dados confirmados');
-                            $('#form')[0].reset();
-                        }
-                    );
-                });
-
-            } // fim da verificação de página
         });
     </script>
 
+    <!-- fim validação, regex CPF, verifica maior de 18 anos no campo data de nascimento -->
     <script>
         $(function () {
             $('#footer').load('footer.html');
             $('#relatorio').load('/app/pages/relatorio.html')
+
         });
     </script>
 </body>

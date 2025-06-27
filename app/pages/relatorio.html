@@ -9,7 +9,6 @@
                             <span id="span-nome">{NOME}</span> nascido em
                             <span id="span-nascimento">{DD/MM/YYYY}</span> e tendo o número do
                             <span id="span-cpf">{000.000.000-00}</span> e se identificando com o sexo
-                            <span id="span-genero">{GENERO}</span>.
                         </p>
 
                         <p>Entre em contato com essa pessoa por e-mail no seguinte endereço
@@ -21,3 +20,88 @@
         </div>
     </div>
 </div>
+
+<script>
+$(document).ready(function() {
+
+    // Máscara CPF
+    $('#input-cpf').on('input', function() {
+        let cpf = $(this).val().replace(/\D/g, '');
+        if (cpf.length > 11) {
+            cpf = cpf.substring(0, 11);
+        }
+        cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+        cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+        cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+        $(this).val(cpf);
+    });
+
+    // Validação e geração do relatório
+    $('#form').on('submit', function(e) {
+        e.preventDefault();
+
+        const nome = $('#input-name').val().trim();
+        const email = $('#input-email').val().trim();
+        const cpf = $('#input-cpf').val();
+        const nascimento = $('#input-date').val();
+
+        const regexCPF = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/;
+
+        if (nome === '') {
+            alertify.error('Por favor, preencha seu nome completo.');
+            $('#input-name').focus();
+            return false;
+        }
+
+        if (email === '') {
+            alertify.error('Por favor, informe seu e-mail.');
+            $('#input-email').focus();
+            return false;
+        }
+
+        if (!regexCPF.test(cpf)) {
+            alertify.error('CPF inválido. Use o formato 000.000.000-00.');
+            $('#input-cpf').focus();
+            return false;
+        }
+
+        if (nascimento === '') {
+            alertify.error('Por favor, informe sua data de nascimento.');
+            $('#input-date').focus();
+            return false;
+        }
+
+        // Transformar a data em DD/MM/YYYY
+        const nascimentoFormatado = nascimento.split('-').reverse().join('/');
+
+        // Modal de confirmação
+        alertify.alert(
+            'Solicitação enviada',
+            'Obrigado por enviar seus dados. Entraremos em contato em breve!',
+            function() {
+                alertify.success('Formulário enviado com sucesso.');
+
+                // Gerar o relatório na div #relatorio
+                $('#relatorio').html(`
+                    <div class="container col s12 about">
+                        <div class="flow-text">
+                            <h5>Relatório de Cadastro de <span id="span-nome">${nome}</span></h5>
+                            <p>
+                                <span>${nome}</span> nascido em
+                                <span>${nascimentoFormatado}</span> e tendo o número do
+                                <span>${cpf}</span>.
+                            </p>
+                            <p>Entre em contato com essa pessoa por e-mail no seguinte endereço
+                                <span>${email}</span>
+                            </p>
+                        </div>
+                    </div>
+                `);
+
+                // Limpar o formulário
+                $('#form')[0].reset();
+            }
+        );
+    });
+});
+</script>
