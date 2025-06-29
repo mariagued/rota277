@@ -34,7 +34,7 @@ Link do repositório
 - ~[ ] ID 06 - Cria transições personalizadas entre diferentes estados da página ou elementos, como mudanças de layout, alterações de cor ou exibição/hide de elementos, usando CSS Transitions ou CSS Animation, para melhorar a usabilidade e a aparência da aplicação.~
 - [X] ID 07 - Aplica um Design System consistente, definindo diretrizes de estilo, cores, tipografia e padrões de componentes que são seguidos em toda a aplicação, garantindo uma experiência de usuário uniforme e atraente.
 - [X] ID 08 - Implementa pré-processadores CSS, como o Sass, em conjunto com um Framework CSS ou de forma isolada, para organizar e modularizar o código CSS, aplicando variáveis, mixins e funções para facilitar a manutenção e escalabilidade dos estilos.
-- [X] ID 09 - Aplica tipografia responsiva utilizando media queries ou a função clamp(), em conjunto com unidades relativas como rem, em ou vw, para ajustar o tamanho da fonte de acordo com diferentes tamanhos de tela.
+- [ ] ID 09 - Aplica tipografia responsiva utilizando media queries ou a função clamp(), em conjunto com unidades relativas como rem, em ou vw, para ajustar o tamanho da fonte de acordo com diferentes tamanhos de tela.
 - [X] ID 10 – Aplica técnicas de responsividade de imagens usando CSS, como object-fit e containers com unidades relativas (vh, %, rem) para uniformizar tamanhos, garantindo boa exibição em diferentes tamanhos de tela.
 - [X] ID 11 – Otimiza imagens com uso de formatos modernos como WebP e carregamento adaptativo, utilizando atributos como srcset, elemento <picture> ou URLs do Cloudinary com parâmetros como w_, h_, f_auto e q_auto.
 
@@ -80,11 +80,12 @@ Link do repositório
   - Por padrão, a aplicação JSON Server executa no endereço `localhost:3000`    
 - Executar o projeto frontend.
 
-## Telas da Aplicação - Desktop iPad Pro 12.9
-![image](https://github.com/user-attachments/assets/c2d07fdb-30c6-4901-8919-98d0c5a71142)
-![image](https://github.com/user-attachments/assets/0ea55e7f-f3c6-42ea-9b76-fc6e83b9d381)
+## Telas da Aplicação - Desktop MacBook Air 
+![Página Principal](image-2.png)
+![Produtos](image-1.png)
+![Formulário de envio de orçamento](image-3.png)
 
 ## Telas de Aplicação - Mobile IPhone 13
-![image](https://github.com/user-attachments/assets/cdf845e4-0903-47cf-8725-540681c4d196)
-![image](https://github.com/user-attachments/assets/29146bc3-2df8-48f3-82ed-5d3b2afce3f9)
-![image](https://github.com/user-attachments/assets/ac145440-4cf1-4f5c-a525-c8154952c16c)
+![Página Principal](image-5.png)
+![Produtos](image-6.png)
+![Formulário de envio de orçamento](image-4.png)
