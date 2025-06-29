@@ -81,11 +81,12 @@ Link do repositório
 - Executar o projeto frontend.
 
 ## Telas da Aplicação - Desktop MacBook Air 
-![Página Principal](image-2.png)
-![Produtos](image-1.png)
-![Formulário de envio de orçamento](image-3.png)
+![image](https://github.com/user-attachments/assets/f676ffae-68df-4380-8c73-9e1c66065328)
+![image](https://github.com/user-attachments/assets/92fd2f32-0698-430c-ad38-0075ab7d6134)
+![image](https://github.com/user-attachments/assets/18d1e5e2-39e9-4b90-a5db-4c04a8f4a15a)
 
 ## Telas de Aplicação - Mobile IPhone 13
-![Página Principal](image-5.png)
-![Produtos](image-6.png)
-![Formulário de envio de orçamento](image-4.png)
+![image](https://github.com/user-attachments/assets/34d1b6f2-3b77-4aff-98fc-0a8bbff2b9b7)
+![image](https://github.com/user-attachments/assets/22dc3123-82ea-4a8a-9ef9-ed27575b8ffc)
+![image](https://github.com/user-attachments/assets/5d873234-4bdc-4e10-ad54-2df6aa2798ad)
+
