@@ -10,7 +10,7 @@ O frontend da aplicação foi desenvolvido com HTML, CSS e JavaScript e o backen
 https://www.figma.com/design/C6Qk709ic6fdhwfC9Kf1jG/rota-277?node-id=103-117&p=f&t=TBJUq9xonupbCsHV-0
 
 ## Design System: 
-Link para o PDF
+https://docs.google.com/document/d/1xWVjxrARHYcMIZk6kLvynqycpyJVLqCHsx-BLFQUEZo/edit?usp=sharing
 
 ## Site em Produção - GitHub Pages
 Link do repositório
