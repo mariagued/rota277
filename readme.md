@@ -9,7 +9,7 @@ O frontend da aplicação foi desenvolvido com HTML, CSS e JavaScript e o backen
 ## Design das Telas - Figma: 
 https://www.figma.com/design/C6Qk709ic6fdhwfC9Kf1jG/rota-277?node-id=103-117&p=f&t=TBJUq9xonupbCsHV-0
 
-## Design System - Documentação:
+## Documentação da Aplicação:
 https://docs.google.com/document/d/1xWVjxrARHYcMIZk6kLvynqycpyJVLqCHsx-BLFQUEZo/edit?usp=sharing
 
 ## Site em Produção - GitHub Pages
