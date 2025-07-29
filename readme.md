@@ -10,13 +10,15 @@ O frontend da aplicação foi desenvolvido com HTML, CSS e JavaScript e o backen
 https://www.figma.com/design/C6Qk709ic6fdhwfC9Kf1jG/rota-277?node-id=103-117&p=f&t=TBJUq9xonupbCsHV-0
 
 ## Documentação da Aplicação:
-https://docs.google.com/document/d/1xWVjxrARHYcMIZk6kLvynqycpyJVLqCHsx-BLFQUEZo/edit?usp=sharing
+[rota277.pdf](https://github.com/user-attachments/files/21478717/rota277.pdf)
 
 ## Site em Produção - GitHub Pages
 Link do repositório
 
 ## Framework CSS
 **Materialize**
+**AlertifyJS**
+**Favicon**
 
 ## Dependências JavaScript
 - **JQuery** - Para realizar animações.
