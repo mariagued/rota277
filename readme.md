@@ -66,7 +66,10 @@ Link do repositório
 - [ ] ID 26 - Realiza requisições assíncronas para uma API fake utilizando adequadamente conceitos como AJAX, Fetch API ou bibliotecas, para exibição dos dados na página web.
 
 ## Manual de execução
-- Clonar o repositório com `git clone`
+- Clonar o repositório com
+ ```bash
+   git clone https://github.com/mariagued/rota277.git
+   ```
 - Fazer checkout no branch `develop` que contém as modificações mais recentes
 - Abrir o projeto no editor Visual Studio Code (VS Code)
 - Abrir um terminal pelo VSCode ou qualquer terminal do seu Sistema Operacional apontando para o diretório raiz do projeto 
